@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="マストドンと互換性" class="slide level1">
+<h1>マストドンと互換性</h1>
+</section>
+<section id="自己紹介" class="slide level1">
+<h1>自己紹介</h1>
+<ul>
+<li>江添亮</li>
+<li>ドワンゴ</li>
+<li>C++</li>
+</ul>
+</section>
+<section id="疑問" class="slide level1">
+<h1>疑問</h1>
+<p>なぜオイゲンは</p>
+<p>マストドンを</p>
+<p>GNU Socialの互換実装としたのか</p>
+</section>
+<section id="マストドン" class="slide level1">
+<h1>マストドン</h1>
+<ul>
+<li>GNU Socialの互換実装</li>
+<li>OStatusプロトコルを実装</li>
+<li>連合によるサーバーのつながり</li>
+</ul>
+</section>
+<section id="gnu-social" class="slide level1">
+<h1>GNU Social</h1>
+<ul>
+<li>元はStatusNet</li>
+<li>Identi.caの実装</li>
+<li>本家開発停止につきGNU傘下に移管</li>
+<li>7年前のお話</li>
+</ul>
+</section>
+<section id="年" class="slide level1">
+<h1>2016年</h1>
+<ul>
+<li>オイゲンがマストドンを公開</li>
+<li>GNU Social互換</li>
+<li>OStatusプロトコル</li>
+</ul>
+</section>
+<section id="状況" class="slide level1">
+<h1>状況</h1>
+<ul>
+<li>GNU SocialはPHP</li>
+<li>PHPはクソ</li>
+<li>OStatusプロトコルもわかりにくい</li>
+<li>というかドキュメントもない</li>
+<li>魚拓漁るしかない</li>
+</ul>
+</section>
+<section id="困難" class="slide level1">
+<h1>困難</h1>
+<ul>
+<li>ドキュメントがない</li>
+<li>動いているクソコード読むしかない</li>
+</ul>
+</section>
+<section id="なぜ" class="slide level1">
+<h1>なぜ？</h1>
+<ul>
+<li>OStatusプロトコルなのか</li>
+<li>GNU Social互換なのか</li>
+<li>独自設計をしなかったのか</li>
+</ul>
+</section>
+<section id="互換性" class="slide level1">
+<h1>互換性</h1>
+<ul>
+<li>互換性は重要</li>
+<li>Pythonは未だに2.xを捨てきれない</li>
+<li>C++は互換性を保ったので成功した</li>
+</ul>
+</section>
+<section id="twitter" class="slide level1">
+<h1>Twitter</h1>
+<ul>
+<li>覇者</li>
+<li>最大ユーザー</li>
+<li>カラスは白といえば白</li>
+</ul>
+</section>
+<section id="パクりサービス" class="slide level1">
+<h1>パクりサービス</h1>
+<ul>
+<li>過去に死屍累々</li>
+<li>パクっても成功しない</li>
+<li>ユーザーがいるところにユーザーが来る</li>
+<li>ユーザーがいないところにユーザーは来ない</li>
+</ul>
+</section>
+<section id="ところで" class="slide level1">
+<h1>ところで</h1>
+<ul>
+<li>GNU Social</li>
+<li>すでにユーザーがいる</li>
+<li>互換性があれば</li>
+<li>ユーザーがいる場所に参加できる</li>
+<li>ユーザーがいるところにユーザーが来る</li>
+</ul>
+</section>
+<section id="ostatus" class="slide level1">
+<h1>OStatus</h1>
+<ul>
+<li>オイゲンいわく</li>
+</ul>
+<blockquote>
+<p>当時の連合プロトコルのなかで一番まともだった。</p>
+</blockquote>
+</section>
+<section id="互換性は大事" class="slide level1">
+<h1>互換性は大事</h1>
+<ul>
+<li>互換性があれば</li>
+<li>既存ユーザーがいる</li>
+<li>新規も違和感なく慣れる</li>
+</ul>
+</section>
+<section id="出遅れにも優しい" class="slide level1">
+<h1>出遅れにも優しい</h1>
+<ul>
+<li>一社がユーザーを牛耳れない</li>
+<li>サーバーはどこでもいい</li>
+<li>自分で立ててもいい</li>
+</ul>
+</section>
+<section id="インフラ" class="slide level1">
+<h1>インフラ</h1>
+<ul>
+<li>つらいのは大手</li>
+<li>小規模はむしろ楽</li>
+<li>ユーザーは直接アクセスせず</li>
+<li>サーバー経由でアクセスするから</li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Transition style
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
